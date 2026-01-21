@@ -2,119 +2,91 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gabriela Cordeiro | Advocacia e Consultoria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriela Cordeiro • Advocacia e Consultoria</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container page">
-
-    <div class="header">
-     <div class="brand">
-  <a href="index.html" data-nav="true" class="brand-logo">
-    <img src="marca.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" class="brand-logo-img">
-  </a>
-</div>
-
-
-      <div class="actions">
-        <button class="btn" id="btnPdf" type="button">Salvar em PDF</button>
-        <button class="btn secondary" type="button"
-          data-wa data-phone="55SEUNUMEROAQUI"
-          data-text="Olá, Dra. Gabriela! Gostaria de agendar um atendimento.">
-          Agendar atendimento
-        </button>
-      </div>
-    </div>
-
-    <nav class="nav">
-      <a href="index.html" data-nav="true">Home</a>
-      <a href="sobre.html" data-nav="true">Sobre</a>
-      <a href="educacao.html" data-nav="true">Educação</a>
-      <a href="experiencia.html" data-nav="true">Experiência</a>
-      <a href="contato.html" data-nav="true">Contato</a>
-    </nav>
-
-    <div class="card hero" style="margin-top:14px;">
-      <div>
-        <div class="kicker"><span class="dot"></span> Elegância, estratégia e confiança</div>
-
-        <h2>Atuação jurídica com foco em soluções e atendimento humanizado.</h2>
-
-        <p>
-          Este portfólio apresenta a advogada Gabriela Cordeiro, com uma identidade visual
-          marsala e toques dourados, destacando áreas de atuação, formação e experiência.
-        </p>
-
-        <hr class="sep" />
-
-        <h3 class="section-title">Áreas de atuação</h3>
-
-        <div class="practice-grid">
-          <div class="practice">
-            <div class="ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M7 7h10"/><path d="M8 21h8"/></svg>
-            </div>
-            <div>
-              <div class="title">Direito Cível</div>
-              <div class="meta">Ações, defesas, obrigações e responsabilidade civil.</div>
-            </div>
-          </div>
-
-          <div class="practice">
-            <div class="ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 5.65-9 10-9 10z"/></svg>
-            </div>
-            <div>
-              <div class="title">Direito de Família</div>
-              <div class="meta">Divórcio, guarda, pensão e acordos.</div>
-            </div>
-          </div>
-
-          <div class="practice">
-            <div class="ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M6 7l2 14h8l2-14"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
-            </div>
-            <div>
-              <div class="title">Direito Trabalhista</div>
-              <div class="meta">Reclamações, acordos e orientações.</div>
-            </div>
-          </div>
-
-          <div class="practice">
-            <div class="ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M7 4h10v16H7z"/><path d="M9 8h6"/><path d="M9 12h6"/><path d="M9 16h4"/></svg>
-            </div>
-            <div>
-              <div class="title">Contratos</div>
-              <div class="meta">Elaboração e revisão preventiva.</div>
-            </div>
-          </div>
-        </div>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <a href="index.html" data-nav="true" class="brand-logo">
+          <img src="image.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" class="brand-logo-img">
+        </a>
       </div>
 
-      <div class="sidebox">
-        <div>
-          <div class="label">Atendimento</div>
-          <div class="value">Presencial e online</div>
-        </div>
-        <div>
-          <div class="label">Local</div>
-          <div class="value">Cuiabá/MT</div>
-        </div>
-        <div>
-          <div class="label">Perfil</div>
-          <div class="value">Consultivo • Contencioso • Negociação</div>
-        </div>
-        <div class="badges">
-          <span class="badge">Ética</span>
-          <span class="badge">Clareza</span>
-          <span class="badge">Agilidade</span>
-        </div>
-      </div>
-    </div>
+      <nav class="nav">
+        <a href="index.html" data-nav="true">Home</a>
+        <a href="sobre.html" data-nav="true">Sobre</a>
+        <a href="educacao.html" data-nav="true">Educação</a>
+        <a href="experiencia.html" data-nav="true">Experiência</a>
+        <a href="contato.html" data-nav="true">Contato</a>
+      </nav>
 
-    <div class="footer">© <span id="year"></span> • Gabriela Cordeiro</div>
+      <div class="top-actions">
+        <button class="btn" onclick="salvarPDF()">Salvar em PDF</button>
+        <a class="btn primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener">Agendar atendimento</a>
+      </div>
+    </header>
+
+    <section class="main-card">
+      <div class="grid">
+        <div>
+          <div class="hint">Elegância, estratégia e confiança</div>
+          <h1 class="h1">Atuação jurídica com foco em soluções e atendimento humanizado.</h1>
+          <p class="p">
+            Este portfólio apresenta a advocacia Gabriela Cordeiro, com identidade visual marsala e toques dourados,
+            destacando áreas de atuação, formação e experiência.
+          </p>
+
+          <h2 class="section-title">Áreas de atuação</h2>
+          <div class="cards">
+            <div class="mini-card">
+              <p class="mini-title">Direito Cível</p>
+              <p class="mini-text">Ações, defesas, guarda, obrigações e responsabilidade civil.</p>
+            </div>
+            <div class="mini-card">
+              <p class="mini-title">Direito de Família</p>
+              <p class="mini-text">Divórcio, guarda, pensão e acordos.</p>
+            </div>
+            <div class="mini-card">
+              <p class="mini-title">Direito Trabalhista</p>
+              <p class="mini-text">Reclamações, acordos e orientações.</p>
+            </div>
+            <div class="mini-card">
+              <p class="mini-title">Contratos</p>
+              <p class="mini-text">Elaboração e revisão preventiva.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side">
+          <h3>Atendimento</h3>
+          <div class="kv">
+            <div>
+              <div class="k">Modalidade</div>
+              <div class="v">Presencial e online</div>
+            </div>
+            <div>
+              <div class="k">Local</div>
+              <div class="v">Cuiabá/MT</div>
+            </div>
+            <div>
+              <div class="k">Perfil</div>
+              <div class="v">Consultivo • Contencioso • Negociação</div>
+            </div>
+          </div>
+
+          <div class="tags">
+            <div class="tag">Ética</div>
+            <div class="tag">Clareza</div>
+            <div class="tag">Agilidade</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">© 2026 • Gabriela Cordeiro</footer>
   </div>
 
   <script src="app.js"></script>
