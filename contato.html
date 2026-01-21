@@ -2,98 +2,75 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contato | Gabriela Cordeiro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato • Gabriela Cordeiro</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container page">
-
-    <div class="header">
-     <div class="brand">
-  <a href="index.html" data-nav="true" class="brand-logo">
-    <img src="marca.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" class="brand-logo-img">
-  </a>
-</div>
-
-
-      <div class="actions">
-        <button class="btn" id="btnPdf" type="button">Salvar em PDF</button>
-        <button class="btn secondary" type="button"
-          data-wa data-phone="55SEUNUMEROAQUI"
-          data-text="Olá, Dra. Gabriela! Gostaria de agendar um atendimento.">
-          Agendar atendimento
-        </button>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <a href="index.html" data-nav="true" class="brand-logo">
+          <img src="image.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" class="brand-logo-img">
+        </a>
       </div>
-    </div>
 
-    <nav class="nav">
-      <a href="index.html" data-nav="true">Home</a>
-      <a href="sobre.html" data-nav="true">Sobre</a>
-      <a href="educacao.html" data-nav="true">Educação</a>
-      <a href="experiencia.html" data-nav="true">Experiência</a>
-      <a href="contato.html" data-nav="true">Contato</a>
-    </nav>
+      <nav class="nav">
+        <a href="index.html" data-nav="true">Home</a>
+        <a href="sobre.html" data-nav="true">Sobre</a>
+        <a href="educacao.html" data-nav="true">Educação</a>
+        <a href="experiencia.html" data-nav="true">Experiência</a>
+        <a href="contato.html" data-nav="true">Contato</a>
+      </nav>
 
-    <div class="card" style="margin-top:14px;">
-      <h3 class="section-title">Canais de atendimento</h3>
+      <div class="top-actions">
+        <button class="btn" onclick="salvarPDF()">Salvar em PDF</button>
+        <a class="btn primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener">Agendar atendimento</a>
+      </div>
+    </header>
+
+    <section class="main-card">
+      <h1 class="page-title">Contato</h1>
+      <p class="p">Deixe seus canais e um formulário simples (pode virar link para WhatsApp ou e-mail).</p>
+
+      <div class="cards">
+        <div class="mini-card">
+          <p class="mini-title">WhatsApp</p>
+          <p class="mini-text">
+            <a class="btn" href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener">Abrir WhatsApp</a>
+          </p>
+        </div>
+        <div class="mini-card">
+          <p class="mini-title">E-mail</p>
+          <p class="mini-text">
+            <a class="btn" href="mailto:SEUEMAIL@DOMINIO.COM">Enviar e-mail</a>
+          </p>
+        </div>
+      </div>
 
       <div class="list">
         <div class="item">
           <div class="top">
-            <div class="title">WhatsApp</div>
-            <div class="meta">Resposta rápida</div>
+            <div class="role">Mensagem rápida</div>
+            <div class="meta">Resposta em horário comercial</div>
           </div>
-          <p>
-            Clique no botão “Agendar atendimento” no topo para abrir o WhatsApp com mensagem pronta.
-            (Lembre-se de trocar o número no código.)
-          </p>
-        </div>
 
-        <div class="item">
-          <div class="top">
-            <div class="title">E-mail</div>
-            <div class="meta">contato@seudominio.com</div>
-          </div>
-          <p>Substitua pelo e-mail profissional.</p>
-        </div>
+          <form class="form" onsubmit="event.preventDefault(); alert('Envie esta mensagem pelo WhatsApp ou e-mail.');">
+            <input class="input" type="text" placeholder="Seu nome" required>
+            <input class="input" type="email" placeholder="Seu e-mail" required>
+            <input class="input" type="text" placeholder="Assunto" required style="grid-column:1/-1">
+            <textarea class="textarea" placeholder="Sua mensagem" required style="grid-column:1/-1"></textarea>
+            <button class="btn primary" type="submit" style="grid-column:1/-1;justify-content:center;">Enviar</button>
+          </form>
 
-        <div class="item">
-          <div class="top">
-            <div class="title">Endereço</div>
-            <div class="meta">Cuiabá/MT</div>
+          <div class="small">
+            Dica: se preferir, substitua o formulário por um link direto para WhatsApp com mensagem pré-pronta.
           </div>
-          <p>Coloque o endereço (ou só a cidade) e horários de atendimento.</p>
         </div>
       </div>
+    </section>
 
-      <hr class="sep" />
-
-      <h3 class="section-title">Redes</h3>
-      <div class="item">
-        <div class="top">
-          <div class="title">Instagram / LinkedIn</div>
-          <div class="meta">Links oficiais</div>
-        </div>
-        <p>
-          <a href="#" style="color: var(--gold2); font-weight:750;">Instagram</a>
-          &nbsp;|&nbsp;
-          <a href="#" style="color: var(--gold2); font-weight:750;">LinkedIn</a>
-        </p>
-      </div>
-
-      <hr class="sep" />
-
-      <h3 class="section-title">Observação</h3>
-      <div class="item">
-        <p>
-          Você pode adicionar um aviso de LGPD/privacidade e um texto de atendimento:
-          “Atendimento sob agendamento. Informações tratadas com confidencialidade.”
-        </p>
-      </div>
-    </div>
-
-    <div class="footer">© <span id="year"></span> • Gabriela Cordeiro</div>
+    <footer class="footer">© 2026 • Gabriela Cordeiro</footer>
   </div>
 
   <script src="app.js"></script>
