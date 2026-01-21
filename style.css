@@ -360,3 +360,36 @@ hr.sep{
   }
   .footer{ color:#444 !important; }
 }
+/* Marca completa (logo + nome em imagem) */
+.brand-logo{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(245,218,137,0.18);
+  background: rgba(0,0,0,0.14);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.brand-logo:hover{
+  transform: translateY(-2px);
+  border-color: rgba(245,218,137,0.35);
+  background: rgba(0,0,0,0.18);
+}
+
+/* Tamanho e encaixe da imagem */
+.brand-logo-img{
+  height: 56px;      /* tamanho da sua marca no topo */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 25px rgba(0,0,0,0.35));
+}
+
+@media (max-width:520px){
+  .brand-logo-img{
+    height: 44px;
+  }
+}
