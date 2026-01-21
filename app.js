@@ -1,33 +1,28 @@
-// Marcar menu ativo
-(function(){
-  const path = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav a').forEach(a=>{
-    const href = a.getAttribute('href');
-    if(href === path) a.classList.add('active');
-  });
-})();
+// Fade-in ao carregar e ao trocar de página
+document.addEventListener("DOMContentLoaded", () => {
+  const page = document.querySelector(".page");
+  requestAnimationFrame(() => page?.classList.add("is-ready"));
 
-// Transição suave entre páginas
-(function(){
-  const root = document.documentElement;
-  document.querySelectorAll('a[data-nav="true"]').forEach(a=>{
-    a.addEventListener('click', (e)=>{
-      const url = a.getAttribute('href');
-      if(!url || url.startsWith('http') || url.startsWith('#')) return;
+  // Intercepta cliques no menu para transição suave
+  document.querySelectorAll('a[data-nav="true"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("#") || href.startsWith("http")) return;
+
       e.preventDefault();
-      document.body.classList.add('fade-out');
-      setTimeout(()=>{ window.location.href = url; }, 180);
+      page?.classList.remove("is-ready");
+      setTimeout(() => (window.location.href = href), 220);
     });
   });
 
-  window.addEventListener('pageshow', ()=>{
-    document.body.classList.remove('fade-out');
-    document.body.classList.add('fade-in');
-    setTimeout(()=>document.body.classList.remove('fade-in'), 250);
-  });
-})();
+  // Botão PDF (imprime a página atual)
+  const btnPdf = document.querySelector('[data-action="pdf"]');
+  btnPdf?.addEventListener("click", () => window.print());
 
-// PDF
-function salvarPDF(){
-  window.print();
-}
+  // Botão Agendar (troque o link aqui)
+  const btnAgendar = document.querySelector('[data-action="agendar"]');
+  btnAgendar?.addEventListener("click", () => {
+    // Troque para WhatsApp/Calendly/Google Agenda quando quiser:
+    window.open("https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento.", "_blank");
+  });
+});
