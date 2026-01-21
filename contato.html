@@ -2,75 +2,60 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contato • Gabriela Cordeiro</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <header class="header-center">
+    <a href="index.html" class="logo-center" data-nav="true" aria-label="Home">
+      <img src="image.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" />
+    </a>
+
+    <nav class="nav-center">
+      <a href="index.html" class="nav-item" data-nav="true">Home</a>
+      <a href="sobre.html" class="nav-item" data-nav="true">Sobre</a>
+      <a href="educacao.html" class="nav-item" data-nav="true">Educação</a>
+      <a href="experiencia.html" class="nav-item" data-nav="true">Experiência</a>
+      <a href="contato.html" class="nav-item active" data-nav="true">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn btn-gold" data-action="pdf">Salvar em PDF</button>
+      <button class="btn btn-marsala" data-action="agendar">Agendar atendimento</button>
+    </div>
+  </header>
+
   <div class="container">
-    <header class="header">
-      <div class="brand">
-        <a href="index.html" data-nav="true" class="brand-logo">
-          <img src="image.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" class="brand-logo-img">
-        </a>
-      </div>
+    <main class="page card">
+      <div class="pill">Contato</div>
+      <h1>Vamos conversar?</h1>
+      <p>Preencha seus canais abaixo. O botão “Agendar atendimento” abre o WhatsApp (configurável no app.js).</p>
 
-      <nav class="nav">
-        <a href="index.html" data-nav="true">Home</a>
-        <a href="sobre.html" data-nav="true">Sobre</a>
-        <a href="educacao.html" data-nav="true">Educação</a>
-        <a href="experiencia.html" data-nav="true">Experiência</a>
-        <a href="contato.html" data-nav="true">Contato</a>
-      </nav>
+      <div class="hr"></div>
 
-      <div class="top-actions">
-        <button class="btn" onclick="salvarPDF()">Salvar em PDF</button>
-        <a class="btn primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener">Agendar atendimento</a>
-      </div>
-    </header>
-
-    <section class="main-card">
-      <h1 class="page-title">Contato</h1>
-      <p class="p">Deixe seus canais e um formulário simples (pode virar link para WhatsApp ou e-mail).</p>
-
-      <div class="cards">
-        <div class="mini-card">
-          <p class="mini-title">WhatsApp</p>
-          <p class="mini-text">
-            <a class="btn" href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener">Abrir WhatsApp</a>
-          </p>
+      <div class="area-cards">
+        <div class="area-card">
+          <div class="area-title">WhatsApp</div>
+          <p class="area-desc">+55 (xx) xxxxx-xxxx</p>
         </div>
-        <div class="mini-card">
-          <p class="mini-title">E-mail</p>
-          <p class="mini-text">
-            <a class="btn" href="mailto:SEUEMAIL@DOMINIO.COM">Enviar e-mail</a>
-          </p>
+        <div class="area-card">
+          <div class="area-title">E-mail</div>
+          <p class="area-desc">contato@seudominio.com</p>
+        </div>
+        <div class="area-card">
+          <div class="area-title">Endereço</div>
+          <p class="area-desc">Cuiabá/MT • Atendimento presencial e online</p>
+        </div>
+        <div class="area-card">
+          <div class="area-title">Redes</div>
+          <p class="area-desc">Instagram / LinkedIn (se quiser, adicionamos ícones)</p>
         </div>
       </div>
 
-      <div class="list">
-        <div class="item">
-          <div class="top">
-            <div class="role">Mensagem rápida</div>
-            <div class="meta">Resposta em horário comercial</div>
-          </div>
-
-          <form class="form" onsubmit="event.preventDefault(); alert('Envie esta mensagem pelo WhatsApp ou e-mail.');">
-            <input class="input" type="text" placeholder="Seu nome" required>
-            <input class="input" type="email" placeholder="Seu e-mail" required>
-            <input class="input" type="text" placeholder="Assunto" required style="grid-column:1/-1">
-            <textarea class="textarea" placeholder="Sua mensagem" required style="grid-column:1/-1"></textarea>
-            <button class="btn primary" type="submit" style="grid-column:1/-1;justify-content:center;">Enviar</button>
-          </form>
-
-          <div class="small">
-            Dica: se preferir, substitua o formulário por um link direto para WhatsApp com mensagem pré-pronta.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">© 2026 • Gabriela Cordeiro</footer>
+      <footer>© 2026 • Gabriela Cordeiro</footer>
+    </main>
   </div>
 
   <script src="app.js"></script>
