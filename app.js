@@ -1,5 +1,5 @@
 (function () {
-  // Marcar link ativo
+  // Marcar link ativo no menu
   const path = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".nav a").forEach(a => {
     const href = a.getAttribute("href");
@@ -24,11 +24,9 @@
 
   // PDF (print)
   const pdfBtn = document.getElementById("btnPdf");
-  if (pdfBtn) {
-    pdfBtn.addEventListener("click", () => window.print());
-  }
+  if (pdfBtn) pdfBtn.addEventListener("click", () => window.print());
 
-  // Atualizar ano
+  // Ano automático
   const y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 })();
