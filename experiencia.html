@@ -8,69 +8,83 @@
 </head>
 <body>
 
+  <div class="modal" id="langModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <h2 class="modal-title" data-i18n="modal_title">Escolha o idioma</h2>
+      <p class="modal-sub" data-i18n="modal_sub">Você pode trocar o idioma a qualquer momento nos botões do topo.</p>
+      <div class="modal-actions">
+        <button class="btn btn-gold" data-picklang="pt">Português</button>
+        <button class="btn btn-gold" data-picklang="en">English</button>
+        <button class="btn btn-gold" data-picklang="es">Español</button>
+      </div>
+    </div>
+  </div>
+
   <header class="header-center">
     <a href="index.html" class="logo-center" data-nav="true" aria-label="Home">
       <img src="image.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" />
     </a>
 
     <nav class="nav-center">
-      <a href="index.html" class="nav-item" data-nav="true">Home</a>
-      <a href="sobre.html" class="nav-item" data-nav="true">Sobre</a>
-      <a href="educacao.html" class="nav-item" data-nav="true">Educação</a>
-      <a href="experiencia.html" class="nav-item active" data-nav="true">Experiência</a>
-      <a href="contato.html" class="nav-item" data-nav="true">Contato</a>
+      <a href="index.html" class="nav-item" data-nav="true" data-i18n="nav_home">Home</a>
+      <a href="sobre.html" class="nav-item" data-nav="true" data-i18n="nav_about">Sobre</a>
+      <a href="educacao.html" class="nav-item" data-nav="true" data-i18n="nav_edu">Educação</a>
+      <a href="experiencia.html" class="nav-item active" data-nav="true" data-i18n="nav_exp">Experiência</a>
+      <a href="contato.html" class="nav-item" data-nav="true" data-i18n="nav_contact">Contato</a>
     </nav>
 
     <div class="header-actions">
-      <button class="btn btn-gold" data-action="pdf">Salvar em PDF</button>
-      <button class="btn btn-marsala" data-action="agendar">Agendar atendimento</button>
+      <button class="btn btn-gold" data-action="pdf" data-i18n="btn_pdf">Salvar em PDF</button>
+      <button class="btn btn-marsala" data-action="agendar" data-i18n="btn_agendar">Agendar atendimento</button>
+
+      <div class="langbar" aria-label="Language">
+        <button class="langbtn" type="button" data-lang="pt">PT</button>
+        <button class="langbtn" type="button" data-lang="en">EN</button>
+        <button class="langbtn" type="button" data-lang="es">ES</button>
+      </div>
     </div>
   </header>
 
   <div class="container">
     <main class="page card">
-      <div class="pill">Experiência • Atuação</div>
-      <h1>Atendimento consultivo e estratégico</h1>
-
-      <p>
-        Minha atuação é focada em oferecer orientação segura e soluções personalizadas, com acompanhamento próximo
-        e comunicação transparente em todas as etapas.
-      </p>
+      <div class="pill" data-i18n="exp_pill">Experiência • Atuação</div>
+      <h1 data-i18n="exp_h1">Atendimento consultivo e estratégico</h1>
+      <p data-i18n="exp_p1"></p>
 
       <div class="hr"></div>
 
-      <h2>Entregas mais comuns</h2>
+      <h2 data-i18n="exp_h2">Entregas mais comuns</h2>
       <div class="area-cards">
         <div class="area-card">
-          <div class="area-title">Previdenciário</div>
-          <p class="area-desc">Planejamento previdenciário, concessão e revisão de benefícios, análise documental e estratégias para o INSS.</p>
+          <div class="area-title" data-i18n="exp_card1_t"></div>
+          <p class="area-desc" data-i18n="exp_card1_d"></p>
         </div>
         <div class="area-card">
-          <div class="area-title">Tributário</div>
-          <p class="area-desc">Regularização fiscal, recuperação de créditos e planejamento tributário para reduzir riscos e otimizar recursos.</p>
+          <div class="area-title" data-i18n="exp_card2_t"></div>
+          <p class="area-desc" data-i18n="exp_card2_d"></p>
         </div>
         <div class="area-card">
-          <div class="area-title">Diagnóstico e estratégia</div>
-          <p class="area-desc">Levantamento de cenário, alternativas jurídicas e plano de ação claro para decisão do cliente.</p>
+          <div class="area-title" data-i18n="exp_card3_t"></div>
+          <p class="area-desc" data-i18n="exp_card3_d"></p>
         </div>
         <div class="area-card">
-          <div class="area-title">Acompanhamento</div>
-          <p class="area-desc">Suporte contínuo, orientações objetivas e atualização constante do andamento e próximos passos.</p>
+          <div class="area-title" data-i18n="exp_card4_t"></div>
+          <p class="area-desc" data-i18n="exp_card4_d"></p>
         </div>
       </div>
 
       <div class="hr"></div>
 
-      <h2>Competências aplicadas</h2>
+      <h2 data-i18n="exp_h2_tags">Competências aplicadas</h2>
       <div class="badges">
-        <span class="badge">Análise técnica</span>
-        <span class="badge">Negociação</span>
-        <span class="badge">Comunicação clara</span>
-        <span class="badge">Gestão de riscos</span>
-        <span class="badge">Atendimento humanizado</span>
+        <span class="badge" data-i18n="exp_tag1"></span>
+        <span class="badge" data-i18n="exp_tag2"></span>
+        <span class="badge" data-i18n="exp_tag3"></span>
+        <span class="badge" data-i18n="exp_tag4"></span>
+        <span class="badge" data-i18n="exp_tag5"></span>
       </div>
 
-      <footer>© 2026 • Gabriela Cordeiro</footer>
+      <footer data-i18n="footer">© 2026 • Gabriela Cordeiro</footer>
     </main>
   </div>
 
