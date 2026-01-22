@@ -1,9 +1,8 @@
-// Fade-in ao carregar e ao trocar de página
 document.addEventListener("DOMContentLoaded", () => {
   const page = document.querySelector(".page");
   requestAnimationFrame(() => page?.classList.add("is-ready"));
 
-  // Intercepta cliques no menu para transição suave
+  // Transição suave ao navegar
   document.querySelectorAll('a[data-nav="true"]').forEach((link) => {
     link.addEventListener("click", (e) => {
       const href = link.getAttribute("href");
@@ -15,14 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Botão PDF (imprime a página atual)
+  // PDF
   const btnPdf = document.querySelector('[data-action="pdf"]');
   btnPdf?.addEventListener("click", () => window.print());
 
-  // Botão Agendar (troque o link aqui)
+  // Agendar (WhatsApp)
   const btnAgendar = document.querySelector('[data-action="agendar"]');
   btnAgendar?.addEventListener("click", () => {
-    // Troque para WhatsApp/Calendly/Google Agenda quando quiser:
-    window.open("https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento.", "_blank");
+    const phone = "5566992535958";
+    const text =
+      "Olá, Dra. Gabriela! Gostaria de agendar um atendimento. Pode me orientar sobre os próximos passos?";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
   });
 });
