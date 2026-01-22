@@ -8,60 +8,84 @@
 </head>
 <body>
 
+  <div class="modal" id="langModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <h2 class="modal-title" data-i18n="modal_title">Escolha o idioma</h2>
+      <p class="modal-sub" data-i18n="modal_sub">Você pode trocar o idioma a qualquer momento nos botões do topo.</p>
+      <div class="modal-actions">
+        <button class="btn btn-gold" data-picklang="pt">Português</button>
+        <button class="btn btn-gold" data-picklang="en">English</button>
+        <button class="btn btn-gold" data-picklang="es">Español</button>
+      </div>
+    </div>
+  </div>
+
   <header class="header-center">
     <a href="index.html" class="logo-center" data-nav="true" aria-label="Home">
       <img src="image.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" />
     </a>
 
     <nav class="nav-center">
-      <a href="index.html" class="nav-item" data-nav="true">Home</a>
-      <a href="sobre.html" class="nav-item" data-nav="true">Sobre</a>
-      <a href="educacao.html" class="nav-item active" data-nav="true">Educação</a>
-      <a href="experiencia.html" class="nav-item" data-nav="true">Experiência</a>
-      <a href="contato.html" class="nav-item" data-nav="true">Contato</a>
+      <a href="index.html" class="nav-item" data-nav="true" data-i18n="nav_home">Home</a>
+      <a href="sobre.html" class="nav-item" data-nav="true" data-i18n="nav_about">Sobre</a>
+      <a href="educacao.html" class="nav-item active" data-nav="true" data-i18n="nav_edu">Educação</a>
+      <a href="experiencia.html" class="nav-item" data-nav="true" data-i18n="nav_exp">Experiência</a>
+      <a href="contato.html" class="nav-item" data-nav="true" data-i18n="nav_contact">Contato</a>
     </nav>
 
     <div class="header-actions">
-      <button class="btn btn-gold" data-action="pdf">Salvar em PDF</button>
-      <button class="btn btn-marsala" data-action="agendar">Agendar atendimento</button>
+      <button class="btn btn-gold" data-action="pdf" data-i18n="btn_pdf">Salvar em PDF</button>
+      <button class="btn btn-marsala" data-action="agendar" data-i18n="btn_agendar">Agendar atendimento</button>
+
+      <div class="langbar" aria-label="Language">
+        <button class="langbtn" type="button" data-lang="pt">PT</button>
+        <button class="langbtn" type="button" data-lang="en">EN</button>
+        <button class="langbtn" type="button" data-lang="es">ES</button>
+      </div>
     </div>
   </header>
 
   <div class="container">
     <main class="page card">
-      <div class="pill">Formação • Cursos</div>
-      <h1>Educação e especialização</h1>
-      <p>Formação acadêmica com foco em fundamentos sólidos e aprofundamento técnico.</p>
+      <div class="pill" data-i18n="edu_pill">Formação • Pós-graduação</div>
+      <h1 data-i18n="edu_h1">Educação e especialização</h1>
+      <p data-i18n="edu_p1">Formação acadêmica e pós-graduações com foco em prática e estratégia.</p>
 
       <div class="hr"></div>
 
+      <h2 data-i18n="edu_h2">Formação</h2>
       <div class="list">
         <div class="list-item">
-          <strong>Graduação</strong><br/>
-          Direito • Estácio • Teresina/PI
-        </div>
-
-        <div class="list-item">
-          <strong>Pós-graduação</strong><br/>
-          Direito Tributário • EBRADI
+          <strong data-i18n="edu_item1_t">Graduação</strong><br/>
+          <span data-i18n="edu_item1_d">Direito • Estácio • Teresina/PI</span>
         </div>
       </div>
 
       <div class="hr"></div>
 
-      <h2>Foco de atuação</h2>
+      <h2 data-i18n="edu_h2_pos">Pós-graduações</h2>
+      <div class="list">
+        <div class="list-item"><strong>•</strong> <span data-i18n="edu_pos_1"></span></div>
+        <div class="list-item"><strong>•</strong> <span data-i18n="edu_pos_2"></span></div>
+        <div class="list-item"><strong>•</strong> <span data-i18n="edu_pos_3"></span></div>
+        <div class="list-item"><strong>•</strong> <span data-i18n="edu_pos_4"></span></div>
+      </div>
+
+      <div class="hr"></div>
+
+      <h2 data-i18n="edu_h2_focus">Foco de atuação</h2>
       <div class="area-cards">
         <div class="area-card">
-          <div class="area-title">Previdenciário</div>
-          <p class="area-desc">Planejamento, concessões e revisões de benefícios, com orientação clara e segura.</p>
+          <div class="area-title" data-i18n="edu_focus1_t">Previdenciário</div>
+          <p class="area-desc" data-i18n="edu_focus1_d"></p>
         </div>
         <div class="area-card">
-          <div class="area-title">Tributário</div>
-          <p class="area-desc">Regularização, recuperação de créditos e planejamento tributário com redução de riscos.</p>
+          <div class="area-title" data-i18n="edu_focus2_t">Tributário</div>
+          <p class="area-desc" data-i18n="edu_focus2_d"></p>
         </div>
       </div>
 
-      <footer>© 2026 • Gabriela Cordeiro</footer>
+      <footer data-i18n="footer">© 2026 • Gabriela Cordeiro</footer>
     </main>
   </div>
 
