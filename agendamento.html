@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gabriela Cordeiro • Advocacia e Consultoria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Modal de idioma (aparece só na primeira vez) -->
+  <div class="modal" id="langModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <h2 class="modal-title" data-i18n="modal_title">Escolha o idioma</h2>
+      <p class="modal-sub" data-i18n="modal_sub">Você pode trocar o idioma a qualquer momento nos botões do topo.</p>
+      <div class="modal-actions">
+        <button class="btn btn-gold" data-picklang="pt">Português</button>
+        <button class="btn btn-gold" data-picklang="en">English</button>
+        <button class="btn btn-gold" data-picklang="es">Español</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <span class="topdot"></span><span class="toptext">(66) 99253-5958</span>
+        <span class="topsep">•</span>
+        <span class="topdot"></span><span class="toptext">Gabrielacordeiroadvogada@hotmail.com</span>
+      </div>
+      <div class="topbar-right">
+        
+      <span class="topdot"></span><span class="toptext" data-i18n="top_right">Atendimento online e presencial</span><span class="topsep">•</span>
+        <div class="langbar" aria-label="Idiomas">
+        <button class="langbtn" data-lang="pt" aria-label="Português">PT</button>
+        <button class="langbtn" data-lang="en" aria-label="English">EN</button>
+        <button class="langbtn" data-lang="es" aria-label="Español">ES</button>
+      </div>
+    
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-logo">
+        <a href="index.html" data-nav="true" aria-label="Home">
+          <img src="image.png" alt="Gabriela Cordeiro - Advocacia e Consultoria" />
+        </a>
+      </div>
+
+      <h1 class="hero-title">GABRIELA CORDEIRO</h1>
+      <p class="hero-sub">Advogada • OAB/MT</p>
+
+      <div class="hero-badges">
+        <span class="badge">Previdenciário</span>
+        <span class="badge">Tributário</span>
+        <span class="badge">Atendimento Online e Presencial</span>
+      </div>
+      <h2 class="hero-focus" data-i18n="hero_focus">Advocacia Previdenciária e Tributária</h2>
+
+
+      <p class="hero-lead" data-i18n="hero_lead">
+        Atuação técnica e estratégica com foco em segurança jurídica, análise individualizada e soluções responsáveis.
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn btn-gold" data-action="agendar" data-i18n="btn_agendar">Agendar atendimento</button>
+        <a class="btn btn-outline" href="contato.html" data-nav="true" data-i18n="btn_whats">Falar no WhatsApp</a>
+        <a class="btn btn-ghost" href="contato.html#assinatura" data-nav="true" data-i18n="btn_signature">Assinatura</a>
+      </div>
+      <a class="hero-mini" href="#" data-action="pdf" data-i18n="btn_pdf">Salvar em PDF</a>
+
+      <nav class="nav-center nav-pills" aria-label="Navegação principal">
+        <a href="index.html" class="nav-item" data-nav="true" data-i18n="nav_home">Início</a>
+      <a href="sobre.html" class="nav-item" data-nav="true" data-i18n="nav_about">Quem Sou</a>
+      <a href="atuacao.html" class="nav-item" data-nav="true" data-i18n="nav_atuacao">Atuação</a>
+      <a href="servicos.html" class="nav-item" data-nav="true" data-i18n="nav_services">Serviços</a>
+      <a href="atendimento.html" class="nav-item" data-nav="true" data-i18n="nav_attend">Atendimento</a>
+      <a href="conteudos.html" class="nav-item" data-nav="true" data-i18n="nav_content">Conteúdos</a>
+      <a href="contato.html" class="nav-item" data-nav="true" data-i18n="nav_contact">Contato</a>
+        <a href="agendamento.html" class="nav-item nav-cta" data-nav="true" data-i18n="nav_schedule">Agendamento</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="container">
+    
+    <main class="page card">
+      <h2 class="page-title" data-i18n="page_schedule_title">Agendamento</h2>
+      <p class="muted">Página em construção. Você pode editar este conteúdo depois.</p>
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
