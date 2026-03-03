@@ -591,3 +591,66 @@ function pageServicos() {
   initDropdown();
   render();
 })();
+
+function renderServicos() {
+  const page = document.getElementById("page");
+
+  page.innerHTML = `
+    <section class="servicos-section">
+
+      <!-- BLOCO TRIBUTÁRIO -->
+      <div class="servico-destaque">
+        <span class="tag">ATUAÇÃO TRIBUTÁRIA</span>
+        <h2>Conseguimos até 70% de desconto nos seus débitos tributários!</h2>
+        <p>
+          Atendemos pessoas físicas e jurídicas que precisam regularizar sua situação fiscal,
+          reduzir ou parcelar débitos tributários, restituir tributos pagos indevidamente e
+          garantir a segurança jurídica de suas operações.
+        </p>
+      </div>
+
+      <h3 class="servico-titulo">Serviços em Direito Tributário</h3>
+
+      <div class="cards">
+        <div class="card">
+          <h4>Planejamento Tributário</h4>
+          <p>Estratégias legais para redução da carga tributária.</p>
+          <button>Saiba mais</button>
+        </div>
+
+        <div class="card">
+          <h4>Parcelamento de Débitos</h4>
+          <p>Negociação e regularização junto aos órgãos fiscais.</p>
+          <button>Saiba mais</button>
+        </div>
+      </div>
+
+      <!-- BLOCO PREVIDENCIÁRIO -->
+      <div class="servico-destaque">
+        <span class="tag">DIREITO PREVIDENCIÁRIO</span>
+        <h2>Você pode estar deixando dinheiro no INSS</h2>
+        <p>
+          Garantimos que seus direitos previdenciários sejam reconhecidos e pagos,
+          com atuação técnica, estratégica e humanizada.
+        </p>
+      </div>
+
+      <h3 class="servico-titulo">Serviços Previdenciários</h3>
+
+      <div class="cards">
+        <div class="card">
+          <h4>Aposentadorias</h4>
+          <p>Análise completa e requerimento do melhor benefício.</p>
+          <button>Saiba mais</button>
+        </div>
+
+        <div class="card">
+          <h4>Revisão de Benefícios</h4>
+          <p>Correção de valores pagos incorretamente pelo INSS.</p>
+          <button>Saiba mais</button>
+        </div>
+      </div>
+
+    </section>
+  `;
+}
