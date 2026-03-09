@@ -6,8 +6,8 @@
     pt: {
       // Brand / Hero
       "brand.name": "GABRIELA CORDEIRO",
-      "brand.nameFull": "Gabriela Cordeiro",
-      "brand.subtitle": "Advogada • OAB/MT 3439/O",
+      "brand.nameFull": "Gabriela Cordeiro — OAB/MT 3439/O",
+      "brand.subtitle": "Advogada — OAB/MT 3439/O",
       "brand.chip1": "Pós-grad. em Direito Tributário (EBRADI)",
       "brand.chip2": "Pós-grad. em Direito Previdenciário e Processo",
 
@@ -179,7 +179,7 @@
       "whats.agenda": "Olá! Gostaria de agendar para o dia",
 
       // Footer
-      "footer.name": "Gabriela Cordeiro",
+      "footer.name": "Gabriela Cordeiro — OAB/MT 3439/O",
       "footer.noticesTitle": "Avisos",
       "footer.desc":
         "Atuação profissional pautada na ética, na responsabilidade técnica e no respeito às normas da OAB.",
@@ -191,8 +191,8 @@
 
     en: {
       "brand.name": "GABRIELA CORDEIRO",
-      "brand.nameFull": "Gabriela Cordeiro",
-      "brand.subtitle": "Attorney • OAB/MT 3439/O",
+      "brand.nameFull": "Gabriela Cordeiro — OAB/MT 3439/O",
+      "brand.subtitle": "Attorney — OAB/MT 3439/O",
       "brand.chip1": "Pós-grad. em Direito Tributário (EBRADI)",
       "brand.chip2": "Pós-grad. em Direito Previdenciário e Processo",
 
@@ -342,7 +342,7 @@
       "whats.services": "Hello! I'd like to talk about tax debt settlement/installments.",
       "whats.agenda": "Hello! I'd like to schedule for",
 
-      "footer.name": "Gabriela Cordeiro",
+      "footer.name": "Gabriela Cordeiro — OAB/MT 3439/O",
       "footer.noticesTitle": "Notices",
       "footer.desc": "Professional practice guided by ethics, technical responsibility and OAB rules.",
       "footer.disclaimer": "Content is informational and does not constitute a promise of results.",
@@ -352,8 +352,8 @@
 
     es: {
       "brand.name": "GABRIELA CORDEIRO",
-      "brand.nameFull": "Gabriela Cordeiro",
-      "brand.subtitle": "Abogada • OAB/MT 3439/O",
+      "brand.nameFull": "Gabriela Cordeiro — OAB/MT 3439/O",
+      "brand.subtitle": "Abogada — OAB/MT 3439/O",
       "brand.chip1": "Pós-grad. em Direito Tributário (EBRADI)",
       "brand.chip2": "Pós-grad. em Direito Previdenciário e Processo",
 
@@ -503,7 +503,7 @@
       "whats.services": "Hola! Quiero hablar sobre regularización o parcelamiento de deudas tributarias.",
       "whats.agenda": "Hola! Quiero agendar para",
 
-      "footer.name": "Gabriela Cordeiro",
+      "footer.name": "Gabriela Cordeiro — OAB/MT 3439/O",
       "footer.noticesTitle": "Avisos",
       "footer.desc": "Actuación profesional basada en ética y normas de la OAB.",
       "footer.disclaimer": "Contenido informativo, sin promesa de resultado.",
@@ -513,8 +513,8 @@
 
     fr: {
       "brand.name": "GABRIELA CORDEIRO",
-      "brand.nameFull": "Gabriela Cordeiro",
-      "brand.subtitle": "Avocate • OAB/MT 3439/O",
+      "brand.nameFull": "Gabriela Cordeiro — OAB/MT 3439/O",
+      "brand.subtitle": "Avocate — OAB/MT 3439/O",
       "brand.chip1": "Pós-grad. em Direito Tributário (EBRADI)",
       "brand.chip2": "Pós-grad. em Direito Previdenciário e Processo",
 
@@ -565,7 +565,7 @@
       "whats.services": "Bonjour ! Je souhaite parler de régularisation/échelonnement de dettes fiscales.",
       "whats.agenda": "Bonjour ! Je souhaite prendre rendez-vous pour",
 
-      "footer.name": "Gabriela Cordeiro",
+      "footer.name": "Gabriela Cordeiro — OAB/MT 3439/O",
       "footer.noticesTitle": "Avis",
       "footer.desc": "Pratique professionnelle guidée par l’éthique et les règles de l’OAB.",
       "footer.disclaimer": "Contenu informatif, sans promesse de résultat.",
