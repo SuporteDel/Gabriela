@@ -11,46 +11,48 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 
-<link href="./css/style.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet"/>
 </head>
-
 <body>
 
-<!-- TOPBAR -->
+<!-- =========================
+       TOPBAR
+       ========================= -->
 <div class="topbar">
-<div class="container topbar__inner">
+  <div class="container topbar__inner">
+    <div class="topbar__left">
+      <a class="topbar__item" href="tel:+5566992535958">
+        <span class="dot"></span>
+        <span>(66) 99253-5958</span>
+      </a>
+      <a class="topbar__item" href="mailto:Gabrielacordeiroadvogada@hotmail.com">
+        <span class="dot"></span>
+        <span>Gabrielacordeiroadvogada@hotmail.com</span>
+      </a>
+    </div>
 
-<div class="topbar__left">
-<a class="topbar__item" href="tel:+5566992535958">
-<span class="dot"></span>
-<span>(66) 99253-5958</span>
-</a>
+    <div class="topbar__center">
+      <a class="topnav__link" data-i18n="nav.about" href="#quem-sou">Quem Sou</a>
+      <a class="topnav__link" data-i18n="nav.areas" href="#atuacao">Atuação</a>
+      <a class="topnav__link" data-i18n="nav.services" href="#servicos">Serviços</a>
+      <a class="topnav__link" href="#avaliacoes">Avaliações</a>
+      <a class="topnav__link" data-i18n="nav.care" href="#atendimento">Atendimento</a>
+      <a class="topnav__link" data-i18n="nav.contents" href="#conteudos">Conteúdos</a>
+      <a class="topnav__link" data-i18n="nav.contact" href="#contato">Contato</a>
+    </div>
 
-<a class="topbar__item" href="mailto:Gabrielacordeiroadvogada@hotmail.com">
-<span class="dot"></span>
-<span>Gabrielacordeiroadvogada@hotmail.com</span>
-</a>
+    <div class="topbar__right">
+      <a class="topbar__cta js-agendar" data-i18n="home.ctaSchedule" href="#">Agendar</a>
+      <div class="topbar__item">
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- MENU (SEM INÍCIO) -->
-<div class="topbar__center">
-  <a class="topnav__link" href="#quem-sou">Quem Sou</a>
-  <a class="topnav__link" href="#atuacao">Atuação</a>
-  <a class="topnav__link" href="#servicos">Serviços</a>
-  <a class="topnav__link" href="#avaliacoes">Avaliações</a>
-  <a class="topnav__link" href="#atendimento">Atendimento</a>
-  <a class="topnav__link" href="#conteudos">Conteúdos</a>
-  <a class="topnav__link" href="#contato">Contato</a>
-</div>
-
-<div class="topbar__right">
-<a class="topbar__cta js-agendar" href="#">Agendar</a>
-</div>
-
-</div>
-</div>
-
-<!-- HERO (mantido, sem conteúdo interno) -->
+<!-- =========================
+       HERO
+       ========================= -->
 <header class="hero">
   <div class="hero__bg"></div>
   <div class="container hero__content">
@@ -58,66 +60,69 @@
   </div>
 </header>
 
-<!-- MAIN -->
+<!-- =========================
+       MAIN (SPA)
+       ========================= -->
 <main class="container main">
-<section class="page page--enter" id="page"></section>
+  <section class="page page--enter" id="page"></section>
 </main>
 
-<!-- FOOTER -->
+<!-- =========================
+       FOOTER
+       ========================= -->
 <footer class="footer">
-<div class="container footer__inner footer__two">
+  <div class="container footer__inner footer__two">
+    <div class="footer__left">
+      <div class="footer__name" data-i18n="footer.name">
+        Gabriela Cordeiro — OAB/MT 3439/O
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+5566992535958">(66) 99253-5958</a>
+        <a href="mailto:Gabrielacordeiroadvogada@hotmail.com">
+          Gabrielacordeiroadvogada@hotmail.com
+        </a>
+      </div>
+    </div>
 
-<div class="footer__left">
-<div class="footer__name">
-Gabriela Cordeiro — OAB/MT 3439/O
-</div>
-
-<div class="footer__contacts">
-<a href="tel:+5566992535958">(66) 99253-5958</a>
-<a href="mailto:Gabrielacordeiroadvogada@hotmail.com">
-Gabrielacordeiroadvogada@hotmail.com
-</a>
-</div>
-</div>
-
-<div class="footer__right">
-<div class="footer__title">Avisos</div>
-
-<div class="footer__desc">
-Atuação profissional pautada na ética, na responsabilidade técnica e no respeito às normas da OAB.
-</div>
-
-<div class="footer__disclaimer">
-Conteúdos disponibilizados possuem caráter informativo e não configuram promessa de resultado.
-</div>
-
-<div class="footer__links">
-<a href="#contato">Política de Privacidade</a>
-<span class="sep">|</span>
-<a href="#contato">Termos de Uso</a>
-</div>
-
-<div class="footer__copy">
-© <span id="year"></span>
-</div>
-</div>
-
-</div>
+    <div class="footer__right">
+      <div class="footer__title" data-i18n="footer.noticesTitle">Avisos</div>
+      <div class="footer__desc" data-i18n="footer.desc">
+        Atuação profissional pautada na ética, na responsabilidade técnica e
+        no respeito às normas da OAB.
+      </div>
+      <div class="footer__disclaimer" data-i18n="footer.disclaimer">
+        Conteúdos disponibilizados possuem caráter informativo e não configuram
+        promessa de resultado.
+      </div>
+      <div class="footer__links">
+        <a data-i18n="footer.privacy" href="#contato">Política de Privacidade</a>
+        <span class="sep">|</span>
+        <a data-i18n="footer.terms" href="#contato">Termos de Uso</a>
+      </div>
+      <div class="footer__copy">
+        © <span id="year"></span>
+      </div>
+    </div>
+  </div>
 </footer>
 
-<!-- WHATS -->
-<a class="whats" href="#" id="whatsFloat" target="_blank">
-<span class="whats__badge">1</span>
-<span class="whats__bubble">
-<span class="whats__bubbleTitle">ATENDIMENTO VIA WHATSAPP</span>
-<span class="whats__bubbleText">Olá, qual seu problema jurídico?</span>
-</span>
+<!-- =========================
+       WHATSAPP FLOAT
+       ========================= -->
+<a aria-label="WhatsApp" class="whats" href="#" id="whatsFloat" rel="noopener" target="_blank">
+  <span aria-hidden="true" class="whats__badge">1</span>
+  <span aria-hidden="true" class="whats__icon"> </span>
+  <span aria-hidden="true" class="whats__bubble">
+    <span class="whats__bubbleTitle">ATENDIMENTO VIA WHATSAPP</span>
+    <span class="whats__bubbleText">Olá, qual seu problema jurídico?</span>
+  </span>
 </a>
 
-<!-- SCRIPTS -->
+<!-- =========================
+       SCRIPTS
+       ========================= -->
 <script src="./js/i18n.js"></script>
 <script src="./js/calendar.js"></script>
 <script src="./js/app.js"></script>
-
 </body>
 </html>
