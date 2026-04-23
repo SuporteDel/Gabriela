@@ -1223,3 +1223,49 @@ section[data-section]:nth-of-type(even) .aboutText .card .card__title{ color:#ff
   display:flex;
   align-items:center;
   gap: 10px;
+/* FIX TOPBAR - mostra todos os itens sem mudar o layout */
+
+.topbar__inner{
+  display:grid;
+  grid-template-columns: auto minmax(0,1fr) auto;
+  align-items:center;
+  gap: 12px;
+  padding: 10px 0;
+  color: rgba(255,255,255,.92);
+  font-size: 12.5px;
+}
+
+.topbar__left{
+  justify-self:start;
+  flex: 0 0 auto;
+}
+
+.topbar__center{
+  justify-self:center;
+  min-width: 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+.topbar__right{
+  justify-self:end;
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.topnav__link{
+  white-space: nowrap;
+  padding: 6px 8px;
+  font-size: 12.5px;
+  flex: 0 0 auto;
+}
+
+.topbar__cta{
+  margin-right: 0;
+}
