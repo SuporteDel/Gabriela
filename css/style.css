@@ -1192,3 +1192,34 @@ section[data-section]:nth-of-type(even) .aboutText .card .card__title{ color:#ff
 }
 #conteudos .card--link .card__title,
 #conteudos .card--link .card__text{ color:#132033 !important; opacity:1 !important; }
+* FIX TOPBAR - layout original com correção de quebra */
+
+.topbar__inner{
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  align-items:center;
+  gap: 12px;
+  padding: 10px 0;
+  color: rgba(255,255,255,.92);
+  font-size: 12.5px;
+}
+
+.topbar__center{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 16px;
+  flex-wrap: nowrap;
+  overflow:hidden;
+}
+
+.topnav__link{
+  white-space: nowrap;
+  padding: 6px 10px;
+  font-size: 12.5px;
+}
+
+.topbar__right{
+  display:flex;
+  align-items:center;
+  gap: 10px;
