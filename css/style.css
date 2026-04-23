@@ -1271,63 +1271,64 @@ section[data-section]:nth-of-type(even) .aboutText .card .card__title{ color:#ff
 }
 
 /* =========================================================
-   FIX FINAL TOPBAR
-   - remove botão Agendar
+   FIX FINAL TOPBAR CENTRALIZADA
+   - remove telefone e e-mail
+   - remove área da direita
+   - centraliza apenas as páginas
    - mantém topo fino
-   - mostra todas as páginas, inclusive Arquivos
-   - não engole itens do menu
    ========================================================= */
 
 .topbar__inner{
-  display:grid;
-  grid-template-columns: auto minmax(0,1fr) auto;
+  display:flex !important;
   align-items:center;
-  gap: 12px;
+  justify-content:center !important;
+  gap: 0;
   padding: 10px 0;
   color: rgba(255,255,255,.92);
   font-size: 12.5px;
 }
 
-.topbar__left{
-  justify-self:start;
-  flex: 0 0 auto;
+.topbar__left,
+.topbar__right{
+  display:none !important;
 }
 
 .topbar__center{
-  justify-self:center;
+  flex: 0 1 auto;
   min-width: 0;
   display:flex;
   align-items:center;
   justify-content:center;
-  gap: 12px;
+  gap: 18px;
   flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
-  padding: 0 6px;
-}
-
-.topbar__center::-webkit-scrollbar{
-  display:none;
-}
-
-.topbar__right{
-  justify-self:end;
-  display:flex;
-  align-items:center;
-  gap: 8px;
-  flex: 0 0 auto;
+  overflow: visible;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .topnav__link{
   white-space: nowrap;
   padding: 6px 8px;
   font-size: 12.5px;
+  line-height: 1.2;
   flex: 0 0 auto;
 }
 
-/* remove o botão para liberar espaço */
+/* garante que nenhum botão antigo apareça */
 .topbar__cta{
   display:none !important;
+}
+
+@media (max-width: 980px){
+  .topbar__center{
+    display:flex !important;
+    gap: 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .topbar__center::-webkit-scrollbar{
+    display:none;
+  }
 }
 
